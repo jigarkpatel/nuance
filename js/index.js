@@ -7,6 +7,7 @@
             }
             else {
                 document.forms["form"]["telephone"].labels[0].textContent+=" - Invalid phone number";
+                document.forms["form"]["telephone"].labels[0].className += " invalidlbl";
                 document.getElementById("telephone").className += " invalid";
                 return false;
             }
